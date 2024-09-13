@@ -7,7 +7,7 @@ import { Separator } from './ui/separator'
 import type { GetSummaryResponse } from '../http/get-summary'
 import dayjs from 'dayjs'
 import ptBR from 'dayjs/locale/pt-BR'
-// import { PendingGoals } from './pending-goals'
+import { PendingGoals } from './pending-goals'
 
 dayjs.locale(ptBR)
 
@@ -59,7 +59,7 @@ export function WeeklySummary({ summary }: WeeklySummaryProps) {
 
             <Separator />
 
-            {/* <PendingGoals /> */}
+            <PendingGoals />
 
             <div className="space-y-6">
                 <h2 className="text-xl font-medium">Sua semana</h2>
