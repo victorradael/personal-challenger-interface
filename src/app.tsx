@@ -1,7 +1,7 @@
 import { Dialog } from './components/ui/dialog'
 
 import { CreateGoal } from './components/create-goal'
-import { Summary } from './components/summary'
+import { WeeklySummary } from './components/WeeklySummary'
 import { useQuery } from '@tanstack/react-query'
 import { Loader2 } from 'lucide-react'
 // import { EmptyGoal } from './components/empty-goals'
@@ -26,7 +26,7 @@ export function App() {
   return (
     <Dialog>
       {data.summary.total > 0 ? (
-        <Summary summary={data.summary} />
+        <WeeklySummary summary={data.summary} />
       ) : (
         <EmptyGoals />
       )}
