@@ -1,7 +1,23 @@
+import { Plus } from 'lucide-react'
+import { Button } from './components/ui/button'
+
+import logo from './assets/text-logo.svg'
+import startImage from './assets/start-image.svg'
+
 export function App() {
 
   return (
-    <h1 className="bg-black text-white text-xl">Hell</h1>
+    <div className="h-screen flex flex-col items-center justify-center gap-8">
+      <img src={logo} alt="Personal Challenger Logo" />
+      <img src={startImage} alt="Personal Challenger Start" />
+      <p className='text-zinc-300 leading-relaxed max-w-80 text-center'>
+        Você ainda não cadastrou nenhuma meta, que tal cadastrar um agora mesmo?
+      </p>
+      <Button>
+        <Plus className='size-4' />
+        Cadastrar meta
+      </Button>
+    </div>
   )
 }
 
